@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  color:#333333;
+}
+
+a {
+  color:dodgerblue;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+a:visited {
+  color:turquoise;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 10px;
+}
+
+header, main, footer {
+  display: block;
+  max-width: 75vw;
+  margin:0 auto;
+}
+header h1 {
+  color:lightpink;
+  padding-left:15px;
+  border-left:5px dotted turquoise;
+}
+header nav {
+  display: block;
+  overflow: hidden;
+  background-color: turquoise;
+  border:2px solid turquoise;
+}
+
+header nav .main {
+  display: block;
+  float: left;
+}
+
+header nav .main a,
+header nav .main a:visited {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 18px;
+  padding: 10px 1px;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+header nav .main a.active {
+  border-bottom: 5px solid white;
+}
+
+header nav .social {
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+header nav .social a,
+header nav .social a:visited {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 18px;
+  padding: 15px 1px 10px 1px;
+  color:white;
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+header nav .social a:hover,
+header nav .main a:hover {
+  color:#222;
+  opacity: .7;
+  text-decoration: none;
+}
+
+main section {
+  display: block;
+  max-width: 55%;
+  float: left;
+  padding-right:2rem;
+}
+
+main aside {
+  display: block;
+  max-width: 44%;
+  float: right;
+}
+
+.projects article {
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+.projects article h4 {
+  display: block;
+  width:100%;
+  padding: 3px 5px;
+  background-color: lightpink;
+  font-family: cursive;
+}
+
+.projects article img {
+  width:200px;
+  float:left;
+  margin: 0 10px 20px 0;
+}
+
+.projects figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 20px;
+  display: block;
+  width: 50%;
+  float: left;
+  padding:2px
+}
+
+.projects figure img {
+  max-width: 100%;
+  margin-bottom:0;
+  border:1px solid turquoise;
+}
+
+.projects figure figcaption {
+  font-size: .7rem;
+  padding:5px 5px;
+  text-align: center;
+  background-color:turquoise;
+  color:white;
+}
+
+.future-projects,
+.future-projects ul {
+  list-style: none;
+}
+
+.future-projects li {
+  display: block;
+  margin-bottom:10px;
+}
+
+ul.future-projects,
+ul.future-projects ul {
+  padding-left:0;
+}
+
+.future-projects ul li {
+  border-left:5px solid turquoise;
+  padding-left:20px;
+  margin-top:10px
+}
+
+footer {
+  clear:both;
+}
+footer section {
+  width:49%;
+  float: left;
+}
+
+footer aside {
+  width:49%;
+  float: right;
+  text-align: right;
+}
+
+footer aside nav a,
+footer aside nav a:visited,
+footer aside nav a:hover,
+footer aside nav a:active {
+  background-color:pink;
+  color:white;
+  height:30px;
+  width:30px;
+  font-size: 1.5rem;
+  border-radius:50%;
+}
+
+footer aside nav {
+  display: block;
+  width: 100%;
+  float: right;
+}
+
+footer aside nav a {
+  text-align: right;
+}
