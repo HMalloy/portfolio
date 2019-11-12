@@ -166,7 +166,11 @@ ul.future-projects ul {
 }
 
 footer {
+  display: block;
   clear:both;
+  margin-bottom:50px;
+  overflow:hidden;
+  padding-top:20px;
 }
 footer section {
   width:49%;
@@ -187,7 +191,8 @@ footer aside nav a:active {
   color:white;
   height:30px;
   width:30px;
-  font-size: 1.5rem;
+  padding:10px;
+  font-size: 1rem;
   border-radius:50%;
 }
 
