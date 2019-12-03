@@ -129,6 +129,7 @@ header nav .main a:hover {
 
 header nav .main a.active {
   border-bottom: 5px solid white;
+  margin-bottom:2px;
 }
 
 /*---- main section styles ----*/
@@ -145,6 +146,7 @@ main aside {
   float: right;
 }
 
+/*---- projects ----*/
 .projects article {
   display: block;
   width: 100%;
@@ -166,6 +168,7 @@ main aside {
   margin: 0 10px 20px 0;
 }
 
+/*---- project figures ----*/
 .projects figure {
   margin: 0px;
   margin-bottom: 20px;
@@ -189,6 +192,8 @@ main aside {
   color:white;
 }
 
+/*---- future projects ----*/
+
 .future-projects,
 .future-projects ul {
   list-style: none;
@@ -210,6 +215,7 @@ ul.future-projects ul {
   margin-top:10px
 }
 
+/*---- footer pre-flex box ----
 footer {
   display: block;
   clear:both;
@@ -228,19 +234,6 @@ footer aside {
   text-align: right;
 }
 
-footer aside nav a,
-footer aside nav a:visited,
-footer aside nav a:hover,
-footer aside nav a:active {
-  background-color:pink;
-  color:white;
-  height:30px;
-  width:30px;
-  padding:10px;
-  font-size: 1rem;
-  border-radius:50%;
-}
-
 footer aside nav {
   display: block;
   width: 100%;
@@ -249,4 +242,29 @@ footer aside nav {
 
 footer aside nav a {
   text-align: right;
+}*/
+
+/*---- footer ----*/
+footer {
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom:50px;
+  padding-top:20px;
+}
+
+/*-- footer link styles --*/
+footer aside nav a,
+footer aside nav a:visited,
+footer aside nav a:hover,
+footer aside nav a:active {
+  background-color:pink;
+  color:#fff;
+  height:35px;
+  width:35px;
+  padding:10px;
+  font-size: 1rem;
+  border-radius:50%;
 }
