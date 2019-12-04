@@ -146,30 +146,47 @@ main aside {
   float: right;
 }
 
-/*---- projects ----*/
+/*---- projects ----
 .projects article {
   display: block;
   width: 100%;
   clear: both;
   overflow: hidden;
 }
-
+*/
 .projects article h4 {
   display: block;
   width:100%;
   padding: 3px 5px;
   background-color: lightpink;
-  font-family: cursive;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.25rem;
 }
 
-.projects article img {
-  width:200px;
-  float:left;
-  margin: 0 10px 20px 0;
+/*--- web projects with flex ---*/
+.web-projects article {
+  display: flex;
+  flex-direction: column;
 }
 
-/*---- project figures ----*/
-.projects figure {
+.web-projects article:last-child {
+  border-bottom:2px solid turquoise;
+}
+
+.web-projects article figure {
+  display: flex;
+  margin:0;
+  padding: 15px 0 20px;
+}
+
+.web-projects article figure img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+
+/*---- project figures ----
+.art-projects figure {
   margin: 0px;
   margin-bottom: 20px;
   display: block;
@@ -177,14 +194,25 @@ main aside {
   float: left;
   padding:2px
 }
+*/
+.art-projects {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+}
 
-.projects figure img {
+.art-projects figure {
+  margin:0;
+  max-width:48%;
+}
+
+.art-projects figure img {
   max-width: 100%;
   margin-bottom:0;
   border:1px solid turquoise;
 }
 
-.projects figure figcaption {
+.art-projects figure figcaption {
   font-size: .7rem;
   padding:5px 5px;
   text-align: center;
