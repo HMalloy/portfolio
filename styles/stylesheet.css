@@ -10,6 +10,7 @@ body, p {
 a {
   color:dodgerblue;
   text-decoration: none;
+  transition: color .2s;
 }
 
 a:hover, a:active {
@@ -204,6 +205,7 @@ main aside {
 .art-projects figure {
   margin:0;
   max-width:48%;
+  background-color: turquoise;
 }
 
 .art-projects figure img {
@@ -218,6 +220,15 @@ main aside {
   text-align: center;
   background-color:turquoise;
   color:white;
+}
+
+.art-projects figure a {
+  transition: opacity .5s;
+}
+
+.art-projects figure a:hover,
+.art-projects figure a:active {
+  opacity: .75;
 }
 
 /*---- future projects ----*/
@@ -295,4 +306,10 @@ footer aside nav a:active {
   padding:10px;
   font-size: 1rem;
   border-radius:50%;
+  transition: background-color .2s;
+}
+
+footer aside nav a:hover,
+footer aside nav a:active {
+  background-color: #333;
 }
