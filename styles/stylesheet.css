@@ -197,9 +197,17 @@ form select,
 form textarea {
   border:2px solid turquoise;
   border-radius: 25px;
-  padding:5px;
+  padding: 15px;
   display: block;
   margin-bottom:25px;
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: 0;
+  border: 3px solid darkturquoise;
 }
 
 form input,
@@ -208,15 +216,126 @@ height:45px;
 width:300px;
 }
 
-form label {
+form label,
+legend {
   display: block;
   margin-bottom:5px;
   font-weight: bold;
 }
 
+form input[type="submit"] {
+  background-color: turquoise;
+  color: white;
+  font-weight: bold;
+  transition: background .25s;
+  padding: 5px;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: darkturquoise;
+  border-color: darkturquoise;
+}
+
 form .checkbox-group,
 form .radio-group {
-  
+  border:0;
+  padding:0;
+  margin-bottom:20px;
+}
+
+form .checkbox-group label,
+form .radio-group label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+form .checkbox-group input,
+form .radio-group input {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  cursor:pointer;
+  height:0;
+  width:0;
+}
+
+form .checkbox-group input[type=text] {
+  display: inline-block;
+  border:0;
+  border-radius: 0;
+  border-bottom:2px solid turquoise;
+  height:30px;
+  width:250px;
+  position: relative;
+  opacity: 1;
+  margin-left:35px;
+  background-color: transparent;
+}
+
+.checkmark,
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border:2px solid turquoise;
+  transition: background .25s;
+}
+
+.radiomark {
+  border-radius: 15px;
+}
+
+.checkbox-group label:hover input ~ .checkmark,
+.radio-group label:hover input ~ .radiomark {
+  background-color: #eee;
+}
+
+.checkbox-group input:checked ~ .checkmark,
+.radio-group input:checked ~ .radiomark {
+  background-color: white;
+}
+
+.radiomark:after,
+.checkmark:after {
+  content:"";
+  position: absolute;
+  display: none;
+}
+
+.radiomark:after,
+.checkmark:after {
+  display: block;
+}
+
+
+.radio-group input:checked ~ .radiomark:after {
+  left:4px;
+  top:4px;
+  width:13px;
+  height:13px;
+  border-radius: 10px;
+  background-color: turquoise;
+}
+.checkbox-group input:checked ~ .checkmark:after {
+  left:7px;
+  top:3px;
+  width:5px;
+  height:10px;
+  border:solid turquoise;
+  border-width:0 3px 3px 0;
+  -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg)
 }
 
 /*---- project figures ----
