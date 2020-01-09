@@ -7,6 +7,11 @@ body, p {
   color:#333333;
 }
 
+label, input, textarea, select {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 a {
   color:dodgerblue;
   text-decoration: none;
@@ -30,6 +35,7 @@ header, main, footer {
   display: block;
   max-width: 75vw;
   margin:0 auto;
+  clear:both;
 }
 header h1 {
   color:lightpink;
@@ -185,6 +191,33 @@ main aside {
   margin-right: 20px;
 }
 
+/*---- forms ----*/
+form input,
+form select,
+form textarea {
+  border:2px solid turquoise;
+  border-radius: 25px;
+  padding:5px;
+  display: block;
+  margin-bottom:25px;
+}
+
+form input,
+form select {
+height:45px;
+width:300px;
+}
+
+form label {
+  display: block;
+  margin-bottom:5px;
+  font-weight: bold;
+}
+
+form .checkbox-group,
+form .radio-group {
+  
+}
 
 /*---- project figures ----
 .art-projects figure {

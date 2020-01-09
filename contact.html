@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Heather Malloy | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|PT+Sans+Narrow|Pacifico|Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97eb994f0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <h1>Contact the Rock Star</h1>
+      <nav>
+        <div class="main">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/heather-malloy-7a693712" target="_blank">LinkedIn</a>
+          <a href="https://github.com/HMalloy" target="_blank">GitHub</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>How can I help you?</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="userName">
+
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="userEmail">
+
+          <label for="phone">Phone:</label>
+          <input id="phone" type="tel" name="userPhone">
+
+          <fieldset class="radio-group">
+            <legend>Preferred mode of contact:</legend>
+            <label>
+              <input type="radio" name="preferred" value="email">
+              Email
+            </label>
+            <label>
+              <input type="radio" name="preferred" value="phone">
+              Phone
+            </label>
+          </fieldset>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="userMessage" rows="8" cols="80"></textarea>
+
+          <fieldset class="checkbox-group">
+            <legend>How did you hear about me?</legend>
+            <label>
+              <input type="checkbox" name="hear" value="google"> Google Search
+            </label>
+            <label>
+              <input type="checkbox" name="hear" value="linked"> LinkedIn
+            </label>
+            <label>
+              <input type="checkbox" name="hear" value="github"> GitHub
+            </label>
+            <label>
+              <input type="checkbox" name="hear" value="other"> Other
+              <input type="text" name="other">
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <aside>
+        <h3>Other places to find me:</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/heather-malloy-7a693712" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/HMalloy" target="_blank">GitHub</a></li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <section>
+        <h5>© 2019 Heather Danielle Malloy</h5>
+      </section>
+      <aside>
+        <nav>
+          <a href="https://www.linkedin.com/in/heather-malloy-7a693712" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/HMalloy" target="_blank"><i class="fab fa-github"></i></a>
+        </nav>
+      </aside>
+    </footer>
+  </body>
+</html>
